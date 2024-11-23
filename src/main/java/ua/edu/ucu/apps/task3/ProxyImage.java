@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.task3raw;
+package ua.edu.ucu.apps.task3;
 
 public class ProxyImage implements MyImage {
     private RealImage realImage;

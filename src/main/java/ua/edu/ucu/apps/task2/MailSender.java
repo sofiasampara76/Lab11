@@ -33,9 +33,7 @@ public class MailSender {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(username));
     
-            // Use client's email address as the recipient
-            // Ensure Client class has a valid email field
-            String recipientEmail = mailInfo.getClient().getEmail();  // Update to include a valid email
+            String recipientEmail = mailInfo.getClient().getEmail();
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipientEmail));
     
             message.setSubject("Notification");
